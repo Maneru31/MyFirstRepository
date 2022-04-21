@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.search -> {
-
+                    supportFragmentManager.beginTransaction().replace(binding.fragment.id, ThreeFragment()).commit()
                 }
 
                 R.id.more -> {

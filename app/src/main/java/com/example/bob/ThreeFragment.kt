@@ -5,23 +5,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.bob.databinding.SecondFragmentBinding
+import com.example.bob.databinding.ThreeFragmentBinding
 
-class SecondFragment : Fragment() {
-
+class ThreeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.second_fragment, container, false)
+        return inflater.inflate(R.layout.three_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val binding = SecondFragmentBinding.bind(view)
+        val binding = ThreeFragmentBinding.bind(view)
 
-        binding.ae.text = "Second fragments"
+        binding.Three.text = "Three Fragments"
+
     }
-
 }
