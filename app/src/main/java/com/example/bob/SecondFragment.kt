@@ -21,7 +21,7 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val binding = SecondFragmentBinding.bind(view)
 
-        binding.ae.text = "Second fragments"
+        binding.second.text = "Сообщения"
     }
 
 }

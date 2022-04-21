@@ -20,6 +20,6 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val binding = FirstFragmentBinding.bind(view)
 
-        binding.name.text = "first fragment"
+        binding.name.text = "Дом"
     }
 }
