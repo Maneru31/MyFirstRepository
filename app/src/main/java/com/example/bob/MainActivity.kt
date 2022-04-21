@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.more -> {
-
+                    supportFragmentManager.beginTransaction().replace(binding.fragment.id, FourFragment()).commit()
                 }
 
 
