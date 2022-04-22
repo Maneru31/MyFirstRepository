@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:textSize="68sp"
-        android:id="@+id/count"
+        android:id="@+id/coun"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -24,7 +24,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/count"
+        app:layout_constraintTop_toBottomOf="@id/coun"
         android:text="Добавить"
         android:id="@+id/add"
         />
