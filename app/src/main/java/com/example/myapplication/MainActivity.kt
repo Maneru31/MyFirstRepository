@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
         binding.add.setOnClickListener{
             count ++
 
-            binding.coun.text = count.toString()
+            binding.count.text = count.toString()
         }
         binding.remove.setOnClickListener{
             count--
 
-            binding.coun.text = count.toString()
+            binding.count.text = count.toString()
         }
     }
 }
