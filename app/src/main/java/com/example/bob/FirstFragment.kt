@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bob.databinding.FirstFragmentBinding
 
 class FirstFragment : Fragment() {
@@ -16,10 +17,12 @@ class FirstFragment : Fragment() {
         return inflater.inflate(R.layout.first_fragment, container, false)
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val binding = FirstFragmentBinding.bind(view)
-
+        binding.recycler.adapter = MainRecyclerAdapter()
+        binding.recycler.layoutManager = LinearLayoutManager (requireContext())
         binding.name.text = "Дом"
     }
 }

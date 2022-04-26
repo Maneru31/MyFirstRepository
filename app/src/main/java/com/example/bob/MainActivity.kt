@@ -2,7 +2,9 @@ package com.example.bob
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bob.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,6 +14,10 @@ class MainActivity : AppCompatActivity() {
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+//        binding.recycler.adapter = MainRecyclerAdapter()
+//        binding.recycler.layoutManager = LinearLayoutManager(R.layout.activity_main)
+
 
         binding.buttonNavigation.setOnItemSelectedListener {
 

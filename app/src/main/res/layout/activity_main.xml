@@ -27,6 +27,11 @@
         app:layout_constraintBottom_toTopOf="@id/buttonNavigation"
         />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
